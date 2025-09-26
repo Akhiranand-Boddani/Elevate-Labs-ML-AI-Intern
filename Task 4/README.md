@@ -32,6 +32,6 @@ _Target convention in sklearn loader:_ 0 = malignant, 1 = benign; confirm when u
 _Requirements:_ Python 3.9+, scikit‑learn, pandas, matplotlib.
 
 ### **_Notes and rationale_**
--Standardization is applied because Logistic Regression optimizes a convex log‑loss with L2 regularization and benefits from features on comparable scales.
+- Standardization is applied because Logistic Regression optimizes a convex log‑loss with L2 regularization and benefits from features on comparable scales.
 - Threshold tuning shows the precision‑recall trade‑off; for medical screening, higher recall may be preferred to reduce false negatives, accepting more false positives if necessary.
 - No custom functions/pipelines ensures transparency of each step for interview‑style review and aligns with the task constraints.
